@@ -13,10 +13,8 @@ import CoreData
 extension TodoList {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<TodoList> {
-        return NSFetchRequest<TodoList>(entityName: "TodoList")
+        return NSFetchRequest<TodoList>(entityName: "Note")
     }
-
-    @NSManaged public var isCompleted: Bool
     @NSManaged public var creationDate: Date?
     @NSManaged public var descriptionText: String?
     @NSManaged public var title: String?
