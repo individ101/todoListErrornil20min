@@ -10,7 +10,7 @@ import CoreData
 
 class CoreDataManager {
     static let shared = CoreDataManager()
-    var notes: [TodoList] = []
+    var notes: [Note] = []
     
     private init() {
         fetchAllNotes()
@@ -41,14 +41,14 @@ class CoreDataManager {
     }
     
     func fetchAllNotes() {
-        let request = TodoList.fetchRequest()
+        let request = Note.fetchRequest()
         if let notes = try? persistentContainer.viewContext.fetch(request) {
             self.notes = notes
         }
     }
     
     func addNewNote(title: String, text: String) {
-        let note = TodoList(context: persistentContainer.viewContext)
+        let note = Note(context: persistentContainer.viewContext)
         note.id = UUID().uuidString
         note.title = title
         note.descriptionText = text

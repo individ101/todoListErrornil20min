@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-extension TodoList {
+extension Note {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<TodoList> {
-        return NSFetchRequest<TodoList>(entityName: "Note")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Note> {
+        return NSFetchRequest<Note>(entityName: "Note")
     }
     @NSManaged public var creationDate: Date?
     @NSManaged public var descriptionText: String?
@@ -22,6 +22,17 @@ extension TodoList {
 
 }
 
-extension TodoList : Identifiable {
-
+extension Note : Identifiable {
+    func updateNote(title: String, text: String) {
+        self.title = title
+        self.descriptionText = text
+        self.creationDate = Date()
+        
+        try? managedObjectContext?.save()
+    }
+    
+    func deleteNote() {
+        managedObjectContext?.delete(self)
+        try? managedObjectContext?.save()
+    }
 }
