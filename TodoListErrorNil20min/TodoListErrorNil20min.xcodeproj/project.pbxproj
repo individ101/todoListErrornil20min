@@ -17,6 +17,7 @@
 		9D2DC8112DA7EE2A007FD4CB /* TodoList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DC80F2DA7EE2A007FD4CB /* TodoList+CoreDataClass.swift */; };
 		9D2DC8122DA7EE2A007FD4CB /* TodoList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DC8102DA7EE2A007FD4CB /* TodoList+CoreDataProperties.swift */; };
 		9D2DC8152DA7EEC6007FD4CB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DC8142DA7EEC6007FD4CB /* CoreDataManager.swift */; };
+		9D2DC8172DA7FD95007FD4CB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DC8162DA7FD95007FD4CB /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9D2DC80F2DA7EE2A007FD4CB /* TodoList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9D2DC8102DA7EE2A007FD4CB /* TodoList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9D2DC8142DA7EEC6007FD4CB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		9D2DC8162DA7FD95007FD4CB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				9D2DC8012DA7ECE2007FD4CB /* SceneDelegate.swift */,
 				9D2DC8022DA7ECE2007FD4CB /* TodoListErrorNil20min.xcdatamodeld */,
 				9D2DC8142DA7EEC6007FD4CB /* CoreDataManager.swift */,
+				9D2DC8162DA7FD95007FD4CB /* AddViewController.swift */,
 				9D2DC8032DA7ECE2007FD4CB /* ViewController.swift */,
 			);
 			path = TodoListErrorNil20min;
@@ -171,6 +174,7 @@
 			files = (
 				9D2DC8062DA7ECE2007FD4CB /* AppDelegate.swift in Sources */,
 				9D2DC8072DA7ECE2007FD4CB /* SceneDelegate.swift in Sources */,
+				9D2DC8172DA7FD95007FD4CB /* AddViewController.swift in Sources */,
 				9D2DC8082DA7ECE2007FD4CB /* TodoListErrorNil20min.xcdatamodeld in Sources */,
 				9D2DC8112DA7EE2A007FD4CB /* TodoList+CoreDataClass.swift in Sources */,
 				9D2DC8122DA7EE2A007FD4CB /* TodoList+CoreDataProperties.swift in Sources */,
